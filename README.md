@@ -1,7 +1,7 @@
 # Amazon Kindle Review Sentiment Classifier: NLP Benchmarking Project
 
 ## 📁 Project Summary
-I built a robust sentiment classification system using Amazon Kindle reviews (up to 2014) by benchmarking multiple NLP vectorization techniques and machine learning classifiers. The primary goal was to identify the best combination of NLP encoding and classifier for the task of binary review sentiment classification.
+Built a robust sentiment classification system using Amazon Kindle reviews (up to 2014) by benchmarking multiple NLP vectorization techniques and machine learning classifiers. The primary goal was to identify the best combination of NLP encoding and classifier for the task of binary review sentiment classification.
 
 ---
 
@@ -26,7 +26,7 @@ I built a robust sentiment classification system using Amazon Kindle reviews (up
 ---
 
 ## 📝 NLP Vectorization Techniques Used
-I compared four different NLP techniques:
+Compared four different NLP techniques:
 1. **Bag of Words (BoW)**
 2. **TF-IDF**
 3. **Word2Vec (Custom trained, 300 dimensions)**
@@ -35,7 +35,7 @@ I compared four different NLP techniques:
 ---
 
 ## 🧠 Baseline Classification
-I used **Logistic Regression** across all four NLP techniques to establish baselines.
+Used **Logistic Regression** across all four NLP techniques to establish baselines.
 
 ### 📊 Result:
 **TF-IDF** provided the best performance on the test set.
@@ -43,7 +43,7 @@ I used **Logistic Regression** across all four NLP techniques to establish basel
 ---
 
 ## 🧪 Classifiers Benchmarked with TF-IDF
-I evaluated 7 classifiers using the best-performing vectorizer (TF-IDF):
+Evaluated 7 classifiers using the best-performing vectorizer (TF-IDF):
 
 | Model                  | Notes                                |
 |------------------------|--------------------------------------|
@@ -61,7 +61,7 @@ I evaluated 7 classifiers using the best-performing vectorizer (TF-IDF):
 ---
 
 ## 🛠️ Hyperparameter Tuning
-I performed tuning on Logistic Regression using `GridSearchCV`:
+Performed tuning on Logistic Regression using `GridSearchCV`:
 
 - `C`: `[0.1, 1.0, 10]`
 - `solver`: `['lbfgs', 'liblinear', 'saga']`
